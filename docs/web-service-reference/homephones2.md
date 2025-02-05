@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: ba9bb159-362d-48e0-889d-823cb46ecebf
 description: "The HomePhones2 element specifies an array of HomePhone2 values and the identifiers of their source attributions for the associated persona."
@@ -53,7 +54,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Type schema  <br/> |
 |Validation File  <br/> |types.xsd  <br/> |
 |Can Be Empty  <br/> ||

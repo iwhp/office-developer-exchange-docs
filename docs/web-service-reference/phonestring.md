@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 54fd2192-54ca-4e42-b630-a3fbdd8e4239
 description: "The PhoneString element specifies the phone number for an extracted contact."
@@ -51,7 +52,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema name  <br/> |Types schema  <br/> |
 |Validation file  <br/> |Types.xsd  <br/> |
 |Can be empty  <br/> ||

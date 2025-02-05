@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 1d47141c-3c3f-45b8-90c5-33a44adb34b2
 description: "The UserMailbox element identifies a user mailbox."
@@ -50,7 +51,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema name  <br/> |Types schema  <br/> |
 |Validation file  <br/> |Types.xsd  <br/> |
 |Can be empty  <br/> |true  <br/> |

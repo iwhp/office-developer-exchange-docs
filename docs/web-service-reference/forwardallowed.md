@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: bc32e0f4-61e9-4c9f-9a03-90a07eb51c53
 description: "The ForwardAllowed element specifies whether forwarding emails is enabled."
@@ -53,7 +54,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Type schema  <br/> |
 |Validation File  <br/> |types.xsd  <br/> |
 |Can Be Empty  <br/> ||

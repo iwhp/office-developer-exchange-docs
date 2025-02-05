@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 052055b5-4630-40ed-9b24-9e7f4bf7ba1d
 description: "The EmailAddress (GetPersonaType) element specifies the email address associated with the persona."
@@ -52,7 +53,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema Name  <br/> |Messages schema  <br/> |
 |Validation File  <br/> |Messages.xsd  <br/> |
 |Can be Empty  <br/> |True  <br/> |

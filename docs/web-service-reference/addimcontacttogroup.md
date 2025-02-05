@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 65554e4c-c0d9-485e-9f01-ed1baa8280ab
 description: "The AddImContactToGroup element defines a request to add an existing instant messaging contact to an instant messaging group."
@@ -48,7 +49,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema name  <br/> |Messages schema  <br/> |
 |Validation file  <br/> |messages.xsd  <br/> |
 |Can be empty  <br/> |false  <br/> |

@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 5ff4e97e-c64c-4742-88ca-7cbe39e597e1
 description: "The Actions element identifies an array of actions to perform on a client extension."
@@ -47,7 +48,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |Element|Type|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema name  <br/> |Messages schema  <br/> |
 |Validation file  <br/> |Messages.xsd  <br/> |
 |Can be empty  <br/> ||

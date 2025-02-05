@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - ResponseCode
@@ -591,7 +592,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace | https://schemas.microsoft.com/exchange/services/2006/messages |
+|Namespace | http://schemas.microsoft.com/exchange/services/2006/messages |
 |Schema Name | Messages schema |
 |Validation File | Messages.xsd |
 |Can be Empty | False |

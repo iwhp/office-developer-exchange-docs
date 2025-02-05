@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 815908f1-4223-42d8-92dc-f8bdfc6b5df8
 description: "The GetAppManifestsResponseMessage element specifies the response message for a GetAppManifests request."
@@ -69,7 +70,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema Name  <br/> |Message schema  <br/> |
 |Validation File  <br/> |messages.xsd  <br/> |
 |Can Be Empty  <br/> ||

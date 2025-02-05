@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 54f45774-00a0-4392-af1b-8c5f2208a53f
 description: "The InPlaceHoldIdentity element specifies the identity of a hold that preserves the mailbox items."
@@ -51,7 +52,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema name  <br/> |Messages schema  <br/> |
 |Validation file  <br/> |Messages.xsd  <br/> |
 |Can be empty  <br/> |False  <br/> |

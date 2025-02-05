@@ -5,7 +5,8 @@ manager: sethgros
 ms.date: 04/04/2022
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 18bfa012-e903-d7f3-528a-31ccceb65463
 ---
@@ -16,7 +17,7 @@ ms.assetid: 18bfa012-e903-d7f3-528a-31ccceb65463
 
 |Element|Description|
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |**Schema file** <br/> |types.xsd  <br/> |
 |**Extension base** <br/> |t:AttachmentType  <br/> |
    

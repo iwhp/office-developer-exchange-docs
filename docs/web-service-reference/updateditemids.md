@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 9199aeb2-abdf-40c5-8743-40b61853c951
 description: "The UpdatedItemIds element specifies the identifiers of updated reminder items."
@@ -52,7 +53,7 @@ If the [PerformReminderAction](performreminderaction-operation.md) operation did
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema Name  <br/> |Messages schema  <br/> |
 |Validation File  <br/> |Messages.xsd  <br/> |
 |Can be Empty  <br/> |True  <br/> |

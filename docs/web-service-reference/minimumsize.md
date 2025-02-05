@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 841d229c-140c-48bd-b3a7-21478fcea2fb
 description: "The MinimumSize element represents the minimum size that a message must be in order for the condition or exception to apply."
@@ -51,7 +52,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema Name  <br/> |Messages schema  <br/> |
 |Validation File  <br/> |Messages.xsd  <br/> |
 |Can be Empty  <br/> |True  <br/> |

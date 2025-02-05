@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - Bias
@@ -57,7 +58,7 @@ A second [Bias](bias.md) element in the schema represents the offset from the Co
 The following example shows part of an XML request that identifies an offset of 8 hours from UTC on the client application.
   
 ```xml
-<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -80,7 +81,7 @@ The following example shows part of an XML request that identifies an offset of 
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |False  <br/> |

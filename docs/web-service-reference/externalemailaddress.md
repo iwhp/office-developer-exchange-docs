@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: f7fc08e6-a906-4a18-93cd-56a5b8d460b0
 description: "The ExternalEmailAddress element contains the external email address of the mailbox."
@@ -50,7 +51,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema name  <br/> |Types schema  <br/> |
 |Validation file  <br/> |Types.xsd  <br/> |
 |Can be empty  <br/> ||

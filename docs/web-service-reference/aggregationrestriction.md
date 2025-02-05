@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: d05044f9-d2ff-4aca-956c-20c9cb2f7709
 description: "The AggregationRestriction element specifies a value that is applied to a set of Persona properties resulting from a FindPeople request and filters the result according to the specified restriction."
@@ -49,7 +50,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema name  <br/> |Messages schema  <br/> |
 |Validation file  <br/> |messages.xsd  <br/> |
 |Can be empty  <br/> |false  <br/> |

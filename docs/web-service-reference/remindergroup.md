@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 3e23c2a1-05d8-4fec-897c-f684a5b97e4c
 description: "The ReminderGroup element specifies whether the reminder is for a calendar item or a task."
@@ -51,7 +52,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |False  <br/> |

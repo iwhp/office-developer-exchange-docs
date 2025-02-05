@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: fac1cfe0-8e7b-4196-b3ad-4e86043d9c9b
 description: "The MessageTypes element specifies an array of messages to search."
@@ -49,7 +50,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema name  <br/> |Messages schema  <br/> |
 |Validation file  <br/> |messages.xsd  <br/> |
 |Can be empty  <br/> ||

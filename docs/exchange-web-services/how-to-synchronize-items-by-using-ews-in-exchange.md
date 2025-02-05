@@ -17,7 +17,10 @@ EWS in Exchange uses item synchronization and folder synchronization to sync mai
 Note that before you can sync items to a client, you first have to [sync the folder hierarchy](how-to-synchronize-folders-by-using-ews-in-exchange.md). After the folder hierarchy is in place on the client, if you're performing item synchronization by using the EWS Managed API, you first [get the initial list of items in the Inbox](#get-the-list-of-all-items-or-changed-items-by-using-the-ews-managed-api) by using the [ExchangeService.SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) method. You then update the value of the _cSyncState_ parameter during subsequent calls to get the list of changed items in the Inbox.
   
 To perform item synchronization by using EWS, after you [sync the folder hierarchy](how-to-synchronize-folders-by-using-ews-in-exchange.md), you request the [initial list of items in the Inbox](#get-the-initial-list-of-items-by-using-ews) by using the [SyncFolderItems operation](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx), parse the response, and then at some point in the future [get the changes to the items in the mailbox](#get-the-changes-since-the-last-sync-by-using-ews), and parse the response. After the client receives the list of initial or changed items, it [makes updates locally](#update-the-client). How and when you retrieve changes in the future depends on the [synchronization design pattern](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns) your application is using.
-  
+
+> [!NOTE]
+> SyncFolderItems operation is not supported for use against Office 365 Group mailboxes or Public Folders.
+
 ## Get the list of all items or changed items by using the EWS Managed API
 
 The following code example shows how to get an initial list of all items in the Inbox folder and then get a list of changes to items in the Inbox folder that have occurred since the previous synchronization. During the initial call to the [SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) method, set the _cSyncState_ value to null. When the method completes, save the _cSyncState_ value locally to use in the next **SyncFolderItems** method call. In both the initial call and the subsequent calls, the items are retrieved in batches of ten, by using successive calls to the **SyncFolderItems** method, until no more changes remain.
@@ -79,8 +82,8 @@ The following example shows the XML request to get the initial list of items in 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
@@ -113,15 +116,15 @@ The following example shows the XML response that is returned by the server afte
                          MajorBuildNumber="785"
                          MinorBuildNumber="6"
                          Version="V2_6"
-                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
-                               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+    <m:SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+                               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -175,8 +178,8 @@ The following example shows the XML request to get the list of changes to items 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
       <t:RequestServerVersion Version="Exchange2010_SP2" />
@@ -204,13 +207,13 @@ The following example shows the XML response that is returned by the server afte
 <s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3"
-                 xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
-                 xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
+                 xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
+                 xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+    <m:SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>

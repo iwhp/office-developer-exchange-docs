@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: fedc04e0-cfd2-4652-a2a8-51de859ae847
 description: "The HasIrm element specifies whether at least one message in the conversation and the current folder is an IRM protected message."
@@ -51,7 +52,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |True  <br/> |

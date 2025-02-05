@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: f9bd7323-44db-4d2f-aaaa-94c2dfdeead6
 description: "The ChangeHighlights element specifies what has changed between two versions of a meeting request message."
@@ -63,7 +64,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Type schema  <br/> |
 |Validation File  <br/> |types.xsd  <br/> |
 |Can Be Empty  <br/> ||

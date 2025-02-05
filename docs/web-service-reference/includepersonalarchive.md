@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: b373bb1a-6b1d-4959-98a1-4c4ea62973bc
 description: "The IncludePersonalArchive element specifies whether to include the personal archive in the search."
@@ -51,7 +52,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema Name  <br/> |Message schema  <br/> |
 |Validation File  <br/> |messages.xsd  <br/> |
 |Can Be Empty  <br/> ||

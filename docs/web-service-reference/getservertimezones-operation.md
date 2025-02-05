@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - GetServerTimeZones
@@ -42,8 +43,8 @@ The following code example shows how to retrieve the name and identifier for the
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -72,8 +73,8 @@ The following code example shows how to retrieve the full time zone definition f
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -110,11 +111,11 @@ The following example of a **GetServerTimeZones** response shows a successful re
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetServerTimeZonesResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetServerTimeZonesResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetServerTimeZonesResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</ResponseCode>
@@ -146,11 +147,11 @@ The following example of a **GetServerTimeZones** response shows a successful re
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetServerTimeZonesResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetServerTimeZonesResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetServerTimeZonesResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</ResponseCode>

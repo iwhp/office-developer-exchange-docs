@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: a9c01c64-e76c-4adc-8b04-88af97bd0cc8
 description: "The DeletedOccurrenceStateDefinition specifies the state for a deleted occurrence of a calendar item."
@@ -53,7 +54,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Type schema  <br/> |
 |Validation File  <br/> |types.xsd  <br/> |
 |Can Be Empty  <br/> ||

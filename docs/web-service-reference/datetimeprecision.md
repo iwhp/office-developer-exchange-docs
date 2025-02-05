@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 822dc5a6-2d57-474b-8a7d-da150898e5b6
 description: "The DateTimePrecision element specifies the precision for returned date/time values."
@@ -56,7 +57,7 @@ This element was introduced in Exchange Server 2010 Service Pack 2 (SP2).
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |False  <br/> |

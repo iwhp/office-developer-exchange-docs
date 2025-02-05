@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: c5e0582d-c1e1-453b-93ed-c31165c82697
 description: "The InstallAppResponse element specifies the response to an InstallApp request."
@@ -71,7 +72,7 @@ The **GetAppManifestsResponseMessage** element is applicable for clients that ta
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema Name  <br/> |Message schema  <br/> |
 |Validation File  <br/> |messages.xsd  <br/> |
 |Can Be Empty  <br/> ||

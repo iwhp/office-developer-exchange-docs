@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 04dd4987-baaf-4ebe-ae58-ad962c2f8fa1
 description: "The ReminderMessageData element specifies the data in a reminder message."
@@ -56,7 +57,7 @@ Versions of Exchange starting with build number 15.00.0913.09 can include the **
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |True  <br/> |

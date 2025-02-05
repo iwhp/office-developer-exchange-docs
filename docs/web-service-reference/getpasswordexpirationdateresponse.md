@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 3d3fff1f-ef13-46d5-bd7f-ef535eb80c72
 description: "The GetPasswordExpirationDateResponse element defines the response to a GetPasswordExpirationDate operation operation request."
@@ -64,7 +65,7 @@ This element was introduced in Exchange Server 2010 Service Pack 2 (SP2).
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema Name  <br/> |Messages schema  <br/> |
 |Validation File  <br/> |Messages.xsd  <br/> |
 |Can be Empty  <br/> |False  <br/> |

@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: af1dd9bf-df47-473d-a2ce-ab9a01a37606
 description: "The FindMailboxStatisticsByKeywordsResponse element specifies the response to a FindMailboxStatisticsByKeywords request."
@@ -49,7 +50,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema Name  <br/> |Message schema  <br/> |
 |Validation File  <br/> |messages.xsd  <br/> |
 |Can Be Empty  <br/> ||

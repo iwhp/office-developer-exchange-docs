@@ -4,7 +4,7 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: exchange
 ms.localizationpriority: medium
 ms.assetid: 329902d9-0ecb-4cfb-86dd-5ce863deff3f
 description: "Find information about creating backup and restore applications for Exchange 2013."
@@ -38,20 +38,18 @@ Although the VSS writer architecture was updated in Exchange 2013, the underlyin
 |Managed implementation  <br/> |You can use the VSS APIs in a managed code environment via a COM Interop Assembly.  <br/> |
 |Scriptable  <br/> |Yes, but not recommended.  <br/> |
 |Available test and debug tools  <br/> |No special tools are required to debug applications that use the Windows VSS.  <br/> |
-   
+
 ## In this section
 
 - [Backup and restore concepts for Exchange 2013](backup-and-restore-concepts-for-exchange-2013.md)
-    
+
 - [Build backup and restore applications for Exchange 2013](build-backup-and-restore-applications-for-exchange-2013.md)
-    
+
 - [CChkSGFiles class reference](cchksgfiles-class-reference.md)
-    
+
 ## See also
 
-- [Volume Shadow Copy Service (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb968832%28v=vs.85%29.aspx)   
+- [Volume Shadow Copy Service (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb968832%28v=vs.85%29.aspx)
 - [Explore the EWS Managed API, EWS, and web services in Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
-- [Exchange Management Shell](../management/exchange-management-shell.md)   
-- [Transport agents in Exchange](../transport-agents/transport-agents-in-exchange-2013.md) 
-    
-
+- [Exchange Management Shell](../management/exchange-management-shell.md)
+- [Transport agents in Exchange](../transport-agents/transport-agents-in-exchange-2013.md)

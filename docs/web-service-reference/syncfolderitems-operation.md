@@ -1,12 +1,10 @@
 ---
 title: "SyncFolderItems operation"
- 
- 
-manager: sethgros
+manager: lindalu
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
 ms.localizationpriority: medium
 api_name:
 - SyncFolderItems
@@ -19,6 +17,9 @@ description: "The SyncFolderItems operation synchronizes items between the Excha
 # SyncFolderItems operation
 
 The SyncFolderItems operation synchronizes items between the Exchange server and the client.
+
+> [!NOTE]
+> SyncFolderItems operation is not supported for use against Office 365 Group mailboxes or Public Folders.
   
 ## Remarks
 
@@ -37,9 +38,9 @@ The following example of a SyncFolderItems request shows how to synchronize item
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <SyncFolderItems xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderItems xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>Default</t:BaseShape>
       </ItemShape>
@@ -98,12 +99,12 @@ The following example shows a successful response to the SyncFolderItems request
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
+      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
-                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
-                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -213,12 +214,12 @@ The following example shows an error response to a SyncFolderItems request. This
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
-                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
-                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Error">
           <m:MessageText>Synchronization state data is corrupt or otherwise invalid.</m:MessageText>

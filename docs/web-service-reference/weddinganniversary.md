@@ -1,19 +1,18 @@
 ---
 title: "WeddingAnniversary"
- 
- 
+description: "The WeddingAnniversary element contains the wedding anniversary of a contact."
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - WeddingAnniversary
 api_type:
 - schema
 ms.assetid: 75e3add5-a08f-4a5c-a34c-c36b8291d187
-description: "The WeddingAnniversary element contains the wedding anniversary of a contact."
 ---
 
 # WeddingAnniversary
@@ -24,7 +23,8 @@ The **WeddingAnniversary** element contains the wedding anniversary of a contact
 <WeddingAnniversary/>
 ```
 
- **dateTime**
+**dateTime**
+
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.
@@ -53,16 +53,13 @@ The schema that describes this element is located in the EWS virtual directory o
   
 ## Element information
 
-|||
+|Element info|Value|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema name  <br/> |Types schema  <br/> |
 |Validation file  <br/> |Types.xsd  <br/> |
 |Can be empty  <br/> |False  <br/> |
    
 ## See also
 
-
-
-- [EWS XML elements in Exchange](ews-xml-elements-in-exchange.md)
-
+[EWS XML elements in Exchange](ews-xml-elements-in-exchange.md)

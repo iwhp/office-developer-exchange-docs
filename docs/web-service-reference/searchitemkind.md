@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 89513c26-b751-4619-a300-0ed8f55b0102
 description: "The SearchItemKind element indicates the type of items that are searched for a FindMailboxStatisticsByKeyword operation."
@@ -63,7 +64,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace |https://schemas.microsoft.com/exchange/services/2006/types |
+|Namespace |http://schemas.microsoft.com/exchange/services/2006/types |
 |Schema name |Types schema |
 |Validation file |Types.xsd |
 |Can be empty ||

@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - BodyType
@@ -68,10 +69,10 @@ The following example of a request shows where a **BodyType** element is used.
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+    <GetAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
       <AttachmentShape>
         <t:BodyType>Best</t:BodyType>
       </AttachmentShape>
@@ -89,7 +90,7 @@ The Id attribute has been shortened to preserve readability.
 
 |**Element**|**Description**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |False  <br/> |

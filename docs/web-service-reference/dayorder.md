@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - DayOrder
@@ -45,7 +46,7 @@ None.
 
 ## Text value
 
-A text value is required. The value for the **DayOrder** element can be 1 through 5. The maximum value for this element can be either 4 or 5, depending on the month and year.
+A text value is required. The value for the **DayOrder** element can be 1 through 5. The maximum value for this element can be either 4 or 5, depending on the month and year. A value of 0 is used in the Timezone–StandardTime–DayOrder and Timezone–DaylightTime–DayOrder elements if the timezone does not observe DST.
   
 ## Remarks
 
@@ -55,7 +56,7 @@ A [StandardTime](standardtime.md) element that contains a **DayOrder** element t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  |https://schemas.microsoft.com/exchange/services/2006/types  |
+|Namespace  |http://schemas.microsoft.com/exchange/services/2006/types  |
 |Schema Name  |Types schema  |
 |Validation File  |Types.xsd  |
 |Can be Empty  |False  |

@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 6cf2aea3-c6f7-4cad-a45d-2daffeece4b6
 description: "The GetNonIndexableItemDetailsResponse element specifies the response to a GetNonIndexableItemDetails request."
@@ -53,7 +54,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |Element|Type|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema name  <br/> |Messages schema  <br/> |
 |Validation file  <br/> |Messages.xsd  <br/> |
 |Can be empty  <br/> |false  <br/> |

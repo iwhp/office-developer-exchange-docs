@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - FieldURIOrConstant
@@ -82,7 +83,7 @@ The following XML example shows the FieldURIOrConstant element used with both a 
   
 ```xml
 <Restriction>
-  <Or xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
+  <Or xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
     <IsEqualTo>
       <FieldURI FieldURI="item:DateTimeCreated"/>
       <FieldURIOrConstant>
@@ -103,7 +104,7 @@ The following XML example shows the FieldURIOrConstant element used with both a 
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |False  <br/> |

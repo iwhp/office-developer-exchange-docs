@@ -1,12 +1,11 @@
 ---
-title: "BccRecipients"
- 
- 
+title: "BccRecipients" 
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - BccRecipients
@@ -26,7 +25,8 @@ The **BccRecipients** element represents a collection of recipients to receive a
 </BccRecipients>
 ```
 
- **ArrayOfRecipientsType**
+**ArrayOfRecipientsType**
+
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.
@@ -67,16 +67,13 @@ The schema that describes this element is located in the EWS virtual directory o
   
 ## Element information
 
-|||
+|Item|Value|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |False  <br/> |
    
 ## See also
 
-
-
 - [EWS XML elements in Exchange](ews-xml-elements-in-exchange.md)
-

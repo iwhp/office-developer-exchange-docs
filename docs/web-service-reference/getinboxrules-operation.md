@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - GetInboxRules
@@ -31,8 +32,8 @@ The following example shows the request XML that the client sends to the server.
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
-        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
@@ -70,19 +71,19 @@ The following Simple Object Access Protocol (SOAP) body example shows a successf
         MinorVersion="1" MajorBuildNumber="139"
         MinorBuildNumber="0"
         Version="Exchange2010_SP1"
-        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
-        xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetInboxRulesResponse ResponseClass="Success"
-        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <OutlookRuleBlobExists>true</OutlookRuleBlobExists>
       <InboxRules>
-        <Rule xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
+        <Rule xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
           <RuleId>dCsAAABjzvA=</RuleId>
           <DisplayName>MoveInterestingToJunk</DisplayName>
           <Priority>1</Priority>

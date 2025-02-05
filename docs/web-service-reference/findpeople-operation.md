@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 446106b7-ff2d-4107-90c1-29f4d38ba128
 description: "Find information about the FindPeople EWS operation."
@@ -43,8 +44,8 @@ The following example of a **FindPeople** operation request shows how to return 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -74,8 +75,8 @@ The following example of a **FindPeople** operation request shows how to return 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -111,18 +112,18 @@ The following example shows a successful response to a **FindPeople** operation 
                          MajorBuildNumber="349" 
                          MinorBuildNumber="0" 
                          Version="Exchange2013" 
-                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <FindPeopleResponse ResponseClass="Success" 
-                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <People>
-        <Persona xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
+        <Persona xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
           <PersonaId Id="AAQkAGQ1MjJjMTBkLTc4Y2UtNDA5Ny04ZjU5LWI3MTYzNGNkZmRkYQAQAOjFqObcLmtOlzlRnHdXQjo=" />
           <CreationTime>2012-01-11T22:25:37Z</CreationTime>
           <DisplayName>Terry Adams</DisplayName>

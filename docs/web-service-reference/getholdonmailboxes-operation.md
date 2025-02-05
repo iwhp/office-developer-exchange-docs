@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 01/24/2020
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 9157f329-80b4-4cd0-a158-378064966ae6
 description: "Find information about the GetHoldOnMailboxes EWS operation."
@@ -44,8 +45,8 @@ The following example of a **GetHoldOnMailboxes** operation request shows how to
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -77,20 +78,20 @@ The following example shows a successful response to a **GetHoldOnMailboxes** op
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetHoldOnMailboxesResponse ResponseClass="Success" 
-                                  xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+                                  xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <MailboxHoldResult>
-            <HoldId xmlns="https://schemas.microsoft.com/exchange/services/2006/types">HoldId2</HoldId>
-            <Query xmlns="https://schemas.microsoft.com/exchange/services/2006/types">test</Query>
-            <MailboxHoldStatuses xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
+            <HoldId xmlns="http://schemas.microsoft.com/exchange/services/2006/types">HoldId2</HoldId>
+            <Query xmlns="http://schemas.microsoft.com/exchange/services/2006/types">test</Query>
+            <MailboxHoldStatuses xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
                <MailboxHoldStatus>
                   <Mailbox>/o=First Organization/ou=Exchange Administrative Group (FYDIBPDLT)/cn=Recipients/cn=ecc0fd98c2cadf-Willi</Mailbox>
                   <Status>OnHold</Status>
@@ -144,15 +145,15 @@ The following example shows an error response to a **GetHoldOnMailboxes** operat
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetHoldOnMailboxesResponse ResponseClass="Error" 
-                                  xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+                                  xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>The specific query-based hold is not found.</MessageText>
          <ResponseCode>ErrorMailboxHoldNotFound</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>

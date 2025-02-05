@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - DaylightTime
@@ -64,7 +65,7 @@ None.
 The following partial GetUserAvailability request represents a client application in a location that recognizes daylight saving time.
   
 ```xml
-<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -87,7 +88,7 @@ The following partial GetUserAvailability request represents a client applicatio
 
 | Element | Example |
 |:-----|:-----|
-|Namespace |https://schemas.microsoft.com/exchange/services/2006/types |
+|Namespace |http://schemas.microsoft.com/exchange/services/2006/types |
 |Schema Name |Types schema |
 |Validation File |Types.xsd |
 |Can be Empty |False |

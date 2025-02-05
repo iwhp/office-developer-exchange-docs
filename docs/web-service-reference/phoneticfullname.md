@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: ed08dee7-ba01-4b10-a53a-d28b8e1c3bf9
 description: "The PhoneticFullName element contains the full name of a contact, including the first and last name, spelled phonetically."
@@ -53,7 +54,7 @@ This element was introduced in Exchange Server 2010 Service Pack 2 (SP2).
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema name  <br/> |Types schema  <br/> |
 |Validation file  <br/> |Types.xsd  <br/> |
 |Can be empty  <br/> |False  <br/> |

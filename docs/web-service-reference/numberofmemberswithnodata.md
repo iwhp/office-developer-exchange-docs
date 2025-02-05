@@ -1,19 +1,18 @@
 ---
 title: "NumberOfMembersWithNoData"
- 
- 
+description: "The NumberOfMembersWithNoData element represents the number of distribution list members who do not have published free/busy data to compare to a suggested meeting time. This element represents members of a distribution list that is too large or members who have No Data status."
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - NumberOfMembersWithNoData
 api_type:
 - schema
 ms.assetid: 7ca9c57c-9519-442c-a9f4-dca2b0309716
-description: "The NumberOfMembersWithNoData element represents the number of distribution list members who do not have published free/busy data to compare to a suggested meeting time. This element represents members of a distribution list that is too large or members who have No Data status."
 ---
 
 # NumberOfMembersWithNoData
@@ -42,7 +41,8 @@ The **NumberOfMembersWithNoData** element represents the number of distribution 
 <NumberOfMembersWithNoData>...</NumberOfMembersWithNoData>
 ```
 
- **int**
+**int**
+
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.
@@ -75,21 +75,15 @@ The schema that describes this element is located in the EWS virtual directory o
   
 ## Element information
 
-|||
+|Item|value|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |False  <br/> |
    
 ## See also
 
-
-
-[GetUserAvailability operation](getuseravailability-operation.md)
-  
+[GetUserAvailability operation](getuseravailability-operation.md)  
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-
-
-[Getting User Availability](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
-
+[Getting User Availability](/previous-versions/office/developer/exchange-server-2010/aa494212(v=exchg.140))

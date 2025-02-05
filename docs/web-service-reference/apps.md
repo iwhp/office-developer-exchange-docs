@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: f6f0a2ca-22dd-4789-9eed-f0c1ec9036c4
 description: "The Apps element contains information about all the XML manifest files for apps installed in a mailbox."
@@ -46,7 +47,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Element**|**Description**|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Schema Name  <br/> |Messages schema  <br/> |
 |Validation File  <br/> |Not applicable  <br/> |
 |Can be Empty  <br/> |False  <br/> |

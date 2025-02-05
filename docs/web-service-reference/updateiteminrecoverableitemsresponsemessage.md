@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 96259756-322e-4c24-ac76-0cd9c32e0d6d
 description: "The UpdateItemInRecoverableItemsResponseMessage element specifies the response to an UpdateItemInRecoverableItems request."
@@ -55,7 +56,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 | Element | Example |
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/message  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/message  <br/> |
 |Schema name  <br/> |Message schema  <br/> |
 |Validation file  <br/> |Message.xsd  <br/> |
 |Can be empty  <br/> |false  <br/> |

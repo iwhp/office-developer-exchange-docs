@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: e31d14e1-0c1f-4b69-98b7-157d59c13698
 description: "Find information about the GetImItemList EWS operation."
@@ -40,8 +41,8 @@ The following example of a **GetImItemList** operation request shows how to requ
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -73,18 +74,18 @@ This example returns two personas. The first persona represents two contact item
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" />
+                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" />
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetImItemListResponse ResponseClass="Success" 
-                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <ImItemList>
-            <Groups xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
+            <Groups xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
                <ImGroup>
                   <DisplayName>Other Contacts</DisplayName>
                   <GroupType>IPM.DistList.MOC.OtherContacts</GroupType>
@@ -120,7 +121,7 @@ This example returns two personas. The first persona represents two contact item
                   </MemberCorrelationKey>
                </ImGroup>
             </Groups>
-            <Personas xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
+            <Personas xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
                <Persona>
                   <PersonaId Id="AAQkAGQ1MjJjMTBkLTc4YkZmRkYQAQAFgxE1nBcqRGgYWWorM9/+s=" />
                   <PersonaType>Person</PersonaType>
@@ -444,11 +445,11 @@ The following example shows an error response to a **GetImItemList** operation r
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
    <s:Body>
       <s:Fault>
-         <faultcode xmlns:a="https://schemas.microsoft.com/exchange/services/2006/types">a:ErrorIncorrectSchemaVersion</faultcode>
+         <faultcode xmlns:a="http://schemas.microsoft.com/exchange/services/2006/types">a:ErrorIncorrectSchemaVersion</faultcode>
          <faultstring xml:lang="en-US">The request is valid but does not specify the correct server version in the RequestServerVersion SOAP header.  Ensure that the RequestServerVersion SOAP header is set with the correct RequestServerVersionValue.</faultstring>
          <detail>
-            <e:ResponseCode xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">ErrorIncorrectSchemaVersion</e:ResponseCode>
-            <e:Message xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">The request is valid but does not specify the correct server version in the RequestServerVersion SOAP header.  Ensure that the RequestServerVersion SOAP header is set with the correct RequestServerVersionValue.</e:Message>
+            <e:ResponseCode xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">ErrorIncorrectSchemaVersion</e:ResponseCode>
+            <e:Message xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">The request is valid but does not specify the correct server version in the RequestServerVersion SOAP header.  Ensure that the RequestServerVersion SOAP header is set with the correct RequestServerVersionValue.</e:Message>
          </detail>
       </s:Fault>
    </s:Body>

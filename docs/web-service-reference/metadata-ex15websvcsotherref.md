@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: c1cc609b-65ff-4998-8d2b-545f0fdcb54c
 description: "The Metadata element contains metadata about the mail app."
@@ -50,7 +51,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> | http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Not applicable  <br/> |
 |Can be Empty  <br/> |False  <br/> |

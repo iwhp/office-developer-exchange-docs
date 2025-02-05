@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 5e57ce96-895d-40c5-a670-19f3bc610dbd
 description: "The EndNodeUrl element specifies the URL for the mail app in the Office Store."
@@ -51,7 +52,7 @@ The schema that describes this element is located in the IIS virtual directory t
 
 |**Name**|**Value**|
 |:-----|:-----|
-|Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> | http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Not applicable  <br/> |
 |Can be Empty  <br/> |False  <br/> |

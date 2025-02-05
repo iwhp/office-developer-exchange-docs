@@ -1,15 +1,11 @@
 ---
 title: "Public folder access with EWS in Exchange"
- 
- 
-manager: sethgros
+manager: lindalu
 ms.date: 7/17/2015
 ms.audience: Developer
- 
- 
 ms.assetid: d9372057-1deb-45de-8f98-b9149604429a
 description: "Learn about how to use EWS and the EWS Managed API to access public folders and route public folder requests in Exchange."
-localization_priority: Priority
+ms.localizationpriority: medium
 ---
 
 # Public folder access with EWS in Exchange
@@ -66,7 +62,7 @@ The following operations are not supported, or are partially supported, for publ
     
 EWS and the EWS Managed API do not support the following functionality for public folders:
   
-- Using **SyncFolderHierarchy**. Use the **FindFolder**, **GetFolder** and **SyncFolderItems** operations to synchronize items and folders in a public folder mailbox. 
+- Using **SyncFolderHierarchy**. Use the **FindFolder**, **GetFolder**, **FindItem** and **GetItem** operations to synchronize items and folders in a public folder mailbox. 
     
 - Deep-traversal searches of a public folder hierarchy. Use recursive **FindFolder** operation calls to traverse the public folder hierarchy. 
     

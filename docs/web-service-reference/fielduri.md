@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - FieldURI
@@ -416,6 +417,39 @@ None.
 This element is part of the [Path](path.md) substitution group. 
   
 The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.
+
+Only a subset of the persona attributes are supported for the [FindPeople](https://learn.microsoft.com/exchange/client-developer/web-service-reference/findpeople-operation) operation:
+
+```csharp
+"persona:Alias"
+"persona:Attributions"
+"persona:CompanyName"
+"persona:CreationTime"
+"persona:Departments"
+"persona:DisplayName"
+"persona:DisplayNameFirstLast"
+"persona:DisplayNameFirstLastHeader"
+"persona:DisplayNameLastFirst"
+"persona:DisplayNameLastFirstHeader"
+"persona:DisplayNamePrefix"
+"persona:EmailAddress"
+"persona:EmailAddresses"
+"persona:ExternalDirectoryObjectId"
+"persona:FileAs"
+"persona:Generation"
+"persona:GivenName"
+"persona:HomeCity"
+"persona:ImAddress"
+"persona:ImAddresses"
+"persona:OfficeLocations"
+"persona:PersonaId"
+"persona:PersonaType"
+"persona:RelevanceScore"
+"persona:Surname"
+"persona:ThirdPartyPhotoUrls"
+"persona:Title"
+"persona:WorkCity"
+```
   
 ## Example
 
@@ -426,10 +460,10 @@ The following example shows how to use the FieldURI element.
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
-                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
+                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -448,7 +482,7 @@ The following example shows how to use the FieldURI element.
 
 |Element|Example|
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Schema Name  <br/> |Types schema  <br/> |
 |Validation File  <br/> |Types.xsd  <br/> |
 |Can be Empty  <br/> |False  <br/> |

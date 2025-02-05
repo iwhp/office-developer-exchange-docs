@@ -6,7 +6,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 api_name:
 - NotesFolderPermissionLevel
@@ -68,7 +69,7 @@ The schema that describes this element is located in the EWS virtual directory o
 
 | Element | Example |
 |:-----|:-----|
-|Namespace |https://schemas.microsoft.com/exchange/services/2006/types |
+|Namespace |http://schemas.microsoft.com/exchange/services/2006/types |
 |Schema Name |Types schema |
 |Validation File |Types.xsd |
 |Can be Empty |False |

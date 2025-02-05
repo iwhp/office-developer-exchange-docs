@@ -4,7 +4,8 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: office-online-server
+ms.technology: ews
 ms.localizationpriority: medium
 ms.assetid: 98161486-e2f2-480f-8d5d-708ba81b208a
 description: "The EmptyFolder operation empties folders in a mailbox. Optionally, this operation enables you to delete the subfolders of the specified folder. When a subfolder is deleted, the subfolder and the messages within the subfolder are deleted."
@@ -28,8 +29,8 @@ This following example of an **EmptyFolder** request shows how to form a request
 ```XML
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
     </soap:Header>
@@ -77,15 +78,15 @@ The following example shows a successful response to the **EmptyFolder** request
                          MajorBuildNumber="164" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1"
-                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:EmptyFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
-                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+    <m:EmptyFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:EmptyFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -128,16 +129,16 @@ The following example shows an error response to an **Emptyfolder** request. The
             MajorBuildNumber="164" 
             MinorBuildNumber="0" 
             Version="Exchange2010_SP1" 
-            xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
-            xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
+            xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
+            xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
             xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <m:GetFolderResponse 
-          xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
-          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+          xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
